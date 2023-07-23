@@ -329,3 +329,9 @@ input, button {
 .nav__button {
   display: none;
 }
+
+/* Logos */
+.logos__container {
+  padding-top: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
