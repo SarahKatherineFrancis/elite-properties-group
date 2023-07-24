@@ -8,8 +8,12 @@
     <!-- Boxicon -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
     rel='stylesheet'>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js" defer ></script>
     <!-- JS -->
     <script src="js/main.js" defer></script>
     <title>Elite Properties Group</title>
@@ -150,9 +154,9 @@
             Popular Residences<span>.</span>
           </h2>
 
-          <div class="popular__container">
-            <div>
-              <article class="popular__card">
+          <div class="popular__container swiper">
+            <div class="swiper-wrapper">
+              <article class="popular__card swiper-slide">
                 <img src="img/popular1.jpg" alt="" class="popular__img">
 
                 <div class="popular__data">
@@ -168,7 +172,7 @@
                 </div>
               </article>
 
-              <article class="popular__card">
+              <article class="popular__card swiper-slide">
                 <img src="img/popular2.jpg" alt="" class="popular__img">
 
                 <div class="popular__data">
@@ -184,7 +188,7 @@
                 </div>
               </article>
 
-              <article class="popular__card">
+              <article class="popular__card swiper-slide">
                 <img src="img/popular3.jpg" alt="" class="popular__img">
 
                 <div class="popular__data">
@@ -200,7 +204,7 @@
                 </div>
               </article>
 
-              <article class="popular__card">
+              <article class="popular__card swiper-slide">
                 <img src="img/popular4.jpg" alt="" class="popular__img">
 
                 <div class="popular__data">
@@ -216,7 +220,7 @@
                 </div>
               </article>
 
-              <article class="popular__card">
+              <article class="popular__card swiper-slide">
                 <img src="img/popular5.jpg" alt="" class="popular__img">
 
                 <div class="popular__data">
@@ -231,6 +235,14 @@
                   </p>
                 </div>
               </article>
+            </div>
+
+            <div class="swiper-button-next">
+              <i class='bx bx-chevron-right'></i>
+            </div>
+
+            <div class="swiper-button-prev">
+              <i class='bx bx-chevron-left'></i>
             </div>
           </div>
         </div>
