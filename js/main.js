@@ -75,3 +75,13 @@ function scrollActive() {
 }
 
 window.addEventListener("scroll", scrollActive);
+
+// Show Scroll Up
+function scrollUp() {
+  const scrollUp = document.getElementById("scroll-up");
+  // When the scroll is higher than 350 viewpoint height, add the show-scroll
+  // class to the tag with the scroll-t
+  if (this.scrollY >= 350) scrollUp.classList.add("show-scroll");
+  else scrollUp.classList.remove("show-scroll");
+}
+window.addEventListener("scroll", scrollUp);
