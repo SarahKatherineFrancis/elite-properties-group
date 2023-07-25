@@ -754,3 +754,19 @@ input, button {
   justify-content: center;
   column-gap: 1.25rem;
 }
+
+/* Scroll bar */
+::-webkit-scrollbar {
+  width: .6rem;
+  border-radius: .5rem;
+  background: hsla(228, 8%, 76%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(228, 8%, 64%);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(228, 8%, 54%);
+}
