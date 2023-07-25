@@ -85,3 +85,41 @@ function scrollUp() {
   else scrollUp.classList.remove("show-scroll");
 }
 window.addEventListener("scroll", scrollUp);
+
+// DARK LIGHT THEME
+const themeButton = document.getElementById("theme-button");
+const darkTheme = "dark-theme";
+const iconTheme = "bx-sun";
+
+// Previously Selected Topic (If User Selected)
+const selectedTheme = localStorage.getItem("selected-theme");
+const selectedIcon = localStorage.getItem("selected-icon");
+
+// We Obtain The Current Theme That The Interface Has By Validating The dark-theme
+// Class
+const getCurrentTheme = () =>
+  document.body.classList.contains(darkTheme) ? "dark" : "light";
+const getCurrentIcn = () =>
+  themeButton.classList.contains(iconTheme) ? "bx bx-moon" : "bx bx-sun";
+
+// We Validate If The User Previously Chose A Topic
+if (selectedTheme) {
+  // If The Validation Is Fulfilled, We Ask What The Issue Was To Know If We
+  // Activated Or Deactivated The Dark
+  document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
+    darkTheme
+  );
+  themeButton.classList[selectedIcon === "bx bx moon" ? "add" : "remove"](
+    iconTheme
+  );
+}
+
+// Activate / Deactivate The Theme Manually With The Button
+themeButton.addEventListener("click", () => {
+  // Add Or Remove The Dark / Icon Theme
+  document.body.classList.toggle(darkTheme);
+  themeButton.classList.toggle(iconTheme);
+  // We Save The Theme And The Current Icon That The User Chose
+  localStorage.setItem("selected-theme", getCurrentTheme());
+  localStorage.setItem("selected-icon", getCurrentIcon());
+});
