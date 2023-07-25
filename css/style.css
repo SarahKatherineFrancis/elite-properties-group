@@ -124,7 +124,7 @@ body.dark-theme {
 }
 
 .dark-theme .nav__menu,
-.dark-theme .home__image,
+.dark-theme .home__img,
 .dark-theme .popular__card:hover,
 .dark-theme .values__img,
 .dark-theme .accordion-open,
@@ -1008,5 +1008,144 @@ body.dark-theme {
   .footer__container {
     grid-template-columns: repeat(2, max-content);
     justify-content: space-between;
+  }
+}
+
+/* For large devices  */
+@media screen and (min-width: 1023px) {
+  .section {
+    padding: 7.5rem 0 1rem;
+  }
+
+  .section__title {
+    font-size: 2.25rem;
+  }
+
+  .section__subtitle {
+    font-size: var(--normal-font-size);
+  }
+
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+  }
+
+  .nav__menu {
+    width: initial;
+    margin-left: auto;
+  }
+
+  .nav__list {
+    display: flex;
+    column-gap: 3rem;
+  }
+
+  .nav__link {
+    color: var(--text-color-light);
+  }
+
+  .nav__link i {
+    display: none;
+  }
+
+  .nav__button {
+    display: inline-block;
+  }
+
+  .active-link {
+    background: none;
+    box-shadow: none;
+    color: var(--first-color);
+    font-weight: var(--font-medium);
+  }
+
+  .change-theme {
+    margin: 0 3rem;
+    color: var(--text-color-light);
+  }
+
+  .scroll-header .nav__link,
+  .scroll-header .change-theme {
+    color: var(--text-color);
+  }
+
+  .scroll-header .active-link {
+    color: var(--first-color);
+  }
+
+  .home {
+    padding-bottom: 0;
+  }
+
+  .home__container {
+    padding-top: 5rem;
+    column-gap: 2rem;
+  }
+
+  .home__data {
+    padding-bottom: 4rem;
+  }
+
+  .home__title {
+    margin-bottom: 2rem;
+  }
+
+  .home__description,
+  .home__search {
+    margin-bottom: 3rem;
+  }
+
+  .home__value {
+    column-gap: 3.5rem;
+  }
+
+  .home__orbe {
+    width: 504px;
+    height: 611px;
+    border-radius: 256px 256px 0 0;
+  }
+
+  .home__img {
+    width: 472px;
+    height: 634px;
+    border-radius: 236px 236px 12px 12px;
+    bottom: -2.5rem;
+  }
+
+  .logos__img img {
+    height: 100px;
+  }
+
+  .popular__container {
+    padding-top: 3rem;
+  }
+
+  .popular__card {
+    width: 320px;
+    padding: .75rem .75rem 2rem;
+  }
+
+  .popular__data {
+    padding: 0 .25rem 0 .75rem;
+  }
+
+  .values__container {
+    align-items: flex-start;
+    column-gap: 5rem;
+  }
+
+  .values__orbe {
+    width: 501px;
+    height: 641px;
+    border-radius: 258px 258px 16px 16px;
+  }
+
+  .values__img {
+    width: 461px;
+    height: 601px;
+    border-radius: 238px 238px 12px 12px;
+  }
+
+  .values__img img {
+    max-width: initial;
   }
 }
