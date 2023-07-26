@@ -88,4 +88,4 @@
   Inspiration: <a href="https://dribbble.com/shots/16603527-Homyz-Property-Landing-Page-Website">Homyz Property Landing Page Website</a>
 </p>
 
-This landing page was created by Sarah Francis as part of a personal project. For more projects and information, visit <a href="https://www.sarahcodes.org">sarahcodes.org</a>.
+This landing page was created by Sarah Francis as part of a personal project. For more projects and information, visit <a href="https://www.sarahcodes.org" target="_blank">sarahcodes.org</a>.
