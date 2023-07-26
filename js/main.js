@@ -14,7 +14,7 @@ var swiperPopular = new Swiper(".popular__container", {
   spaceBetween: 32,
   grabCursor: true,
   centeredSlides: true,
-  slidesPerView: "auto",
+  slidesPerView: 3,
   loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -123,3 +123,23 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+// Scroll Reveal Animation
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2500,
+  delay: 400,
+  // reset: true,
+});
+
+sr.reveal(
+  `.home__title, .popular__container, .subscribe__container, .footer__container`
+);
+sr.reveal(`.home__description, .footer__info`, { delay: 500 });
+sr.reveal(`.home__search`, { delay: 600 });
+sr.reveal(`.home__value`, { delay: 700 });
+sr.reveal(`.home__images`, { delay: 800, origin: "bottom" });
+sr.reveal(`.logos__img`, { interval: 100 });
+sr.reveal(`.values__images, .contact__content`, { origin: "left" });
+sr.reveal(`.values__content, .contact__images`, { origin: "right" });
